@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d592d1ba-807f-47f9-9fb4-a80c511ea6ac" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/streaming-ml" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1UWhzqIswTuGBoXV46hFbrWRwXF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/inż/Flink/slf4j-api-1.7.9.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.70642203" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="sourceGenerators in Compile &lt;&lt;= (sourceGenerators in Compile) (g =&gt; Seq(g.last))  " />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="log_reg" />
+      <module name="Flinku" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="log_reg" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="data.log_reg" />
+      <module name="Flinku" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="Flinku" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="flinku [file:/home/kate/IdeaProjects/Flinku/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="Flinku-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3151044921250" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3462565587" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1134086237" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d592d1ba-807f-47f9-9fb4-a80c511ea6ac" name="Default Changelist" comment="" />
+      <created>1575478523911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575478523911</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="287" y="58" key="#Project_Structure" timestamp="1575491833046">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="287" y="58" key="#Project_Structure/67.27.1299.741@67.27.1299.741" timestamp="1575491833046" />
+    <state x="98" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576773019571">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="98" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1576773019571" />
+    <state x="524" y="97" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1576694451663">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="524" y="97" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1576694451663" />
+    <state x="467" y="171" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576704844342">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="467" y="171" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog/67.27.1299.741@67.27.1299.741" timestamp="1576704844342" />
+    <state x="421" y="66" width="579" height="661" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1575479675945">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="421" y="66" width="579" height="661" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/67.27.1299.741@67.27.1299.741" timestamp="1575479675945" />
+    <state x="502" y="28" width="324" height="572" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1575493790656">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="502" y="28" width="324" height="572" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/67.27.1299.741@67.27.1299.741" timestamp="1575493790656" />
+    <state x="469" y="257" width="494" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576704055478">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="469" y="257" width="494" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1299.741@67.27.1299.741" timestamp="1576704055478" />
+    <state x="380" y="150" width="524" height="484" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1575490779834">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="380" y="150" width="524" height="484" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/67.27.1299.741@67.27.1299.741" timestamp="1575490779834" />
+    <state x="437" y="125" width="735" height="484" key="FileChooserDialogImpl" timestamp="1576704932405">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="437" y="125" width="735" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1576704932405" />
+    <state width="1253" height="166" key="GridCell.Tab.0.bottom" timestamp="1576705028799">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="166" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576705028799" />
+    <state width="1253" height="166" key="GridCell.Tab.0.center" timestamp="1576705028798">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="166" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576705028798" />
+    <state width="1253" height="166" key="GridCell.Tab.0.left" timestamp="1576705028797">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="166" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576705028797" />
+    <state width="1253" height="166" key="GridCell.Tab.0.right" timestamp="1576705028798">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="166" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576705028798" />
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1576622191917">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576622191917" />
+    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1576622191917">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1576622191917" />
+    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1576622191917">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1576622191917" />
+    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1576622191917">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1576622191917" />
+    <state x="91" y="27" width="900" height="730" key="SettingsEditor" timestamp="1575566490487">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="91" y="27" width="900" height="730" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1575566490487" />
+    <state x="371" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576768933211">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="371" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576768933211" />
+    <state x="67" y="27" width="710" height="741" key="find.popup" timestamp="1575496265459">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="67" y="27" width="710" height="741" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1575496265459" />
+    <state x="67" y="123" width="1289" height="547" key="new project wizard" timestamp="1576748582775">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="67" y="123" width="1289" height="547" key="new project wizard/67.27.1299.741@67.27.1299.741" timestamp="1576748582775" />
+    <state x="379" y="175" key="run.anything.popup" timestamp="1575480896428">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1575480896428" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1575496489011">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1575496489011" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Flinku$log_reg.ic" NAME="log_reg Coverage Results" MODIFIED="1576580172806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
