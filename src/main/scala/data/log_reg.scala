@@ -111,5 +111,5 @@ object log_reg {
     sampleStream.writeAsText("output.txt", FileSystem.WriteMode.OVERWRITE)
     env.execute()
   }
-
+//teste
 }
