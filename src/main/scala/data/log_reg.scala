@@ -7,6 +7,7 @@ import org.apache.flink.streaming.api.scala._
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+import scala.collection.Map
 
 
 object log_reg {
@@ -60,30 +61,31 @@ object log_reg {
 
   def sigmoid(p: Double) = 1.0 / (1.0 + math.exp(-p))
 
-  def fit(state: Option[Map[Double,Double]], sample: Sample): Map[Double,Double] = {
-    var model = state.getOrElse(Map.empty)
+  def fit(state: scala.collection.mutable.Map[Int,Double], sample: Sample): Map[Int,Double] = {
+    val model = state
     val vector = sample.getVector
+    //var model = scala.collection.mutable.Map[Double,Double]()
+    val clk = vector(0)
+    val fsid = 2 //feature start id
+    var pred = 0.0
 
-//    val clk = vector(0)
-//    val fsid = 2 //feature start id
-//    var pred = 0.0
-//
-//    for (i <- fsid to vector.size) {
-//      val feat = vector(i)
-//      if (!model.contains(i)) {
-//        model(feat) = nextInitWeight()
-//      }
-//      pred += model(feat)
-//    }
-//    pred = sigmoid(pred)
-//    for (i <- fsid to vector.size) {
-//      val feat = vector(i)
-//      model(feat) = model(feat) * (1 - lamb) + eta * (clk - pred)
-//    }
+    for (i <- fsid to vector.size) {
+      val feat = vector(i).toInt
+      if (!model.contains(feat)) {
+        model.apply(feat)
+        model(feat) = nextInitWeight()
+      }
+      pred += model(feat)
+    }
+    pred = sigmoid(pred)
+    for (i <- fsid to vector.size) {
+      val feat = vector(i).toInt
+      model(feat) = model(feat) * (1 - lamb) + eta * (clk - pred)
+    }
     model
   }
 
-  def predict(model: Map[Double,Double], sample: Sample) = ???
+  def predict(model: Map[Int,Double], sample: Sample) = ???
 
   def main(args: Array[String]) {
 
@@ -95,21 +97,25 @@ object log_reg {
       "file:/home/kate/Desktop/input.txt")
 
     val sampleStream: DataStream[Sample] = input.map(FeatureExtractor())
-//    val stringInfo: TypeInformation[String] = createTypeInformation[String]
-//    val words = env.fromElements("To be, or not to be,--that is the question:--",
-//      "Whether 'tis nobler in the mind to suffer", "The slings and arrows of outrageous fortune",
-//      "Or to take arms against a sea of troubles,")
 
     sampleStream
       .keyBy(x => 0)
-      .mapWithState((sample: Sample, state: Option[Map[Double,Double]]) => {
-        val model = fit(state, sample)
-        val p = predict(model, sample)
+      .mapWithState((sample: Sample, state: Option[Map[Int,Double]]) => {
+        val p, model =
+        state match {
+          case Some(model) => val model = fit(model, sample)
+            val p = predict(model, sample)
+            (p, Some(model))
+          case None => val model = fit(scala.collection.mutable.Map[Int,Double],sample)
+            val p = predict(model, sample)
+            (p, Some(model))
+        }
+        //val model = fit(state, sample)
+        //val p = predict(model, sample)
         (p, Some(model))
     })
 
     sampleStream.writeAsText("output.txt", FileSystem.WriteMode.OVERWRITE)
     env.execute()
   }
-//teste
 }
