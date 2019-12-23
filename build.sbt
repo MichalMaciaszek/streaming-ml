@@ -1,4 +1,4 @@
-name := "Flinku"
+name := "streaming-ml"
 
 version := "0.1"
 
