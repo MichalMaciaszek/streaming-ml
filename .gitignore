@@ -1,0 +1,7 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+target/
+.idea/libraries/
+.idea/modules/
+.idea/workspace.xml
+.idea/hydra.xml
+.idea/markdown-*
