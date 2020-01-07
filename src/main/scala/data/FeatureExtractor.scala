@@ -1,4 +1,4 @@
-package data
+package com.aisiot.bigdata.flinkcore
 
 import org.apache.flink.api.common.functions.MapFunction
 
@@ -6,18 +6,22 @@ import scala.collection.mutable.ListBuffer
 
 import java.lang.Integer
 
-case class FeatureExtractor() extends MapFunction[String, Sample] {
+case class FeatureExtractor(logtype: String) extends MapFunction[String, Sample] {
 
   override def map(value: String): Sample = {
     val atributeList = value.split("\\t").toBuffer
-    val label = false // dorobić odpowiednie LABELe
-    val features = ListBuffer[Map[Int, Int]]()
+    var features = ListBuffer[Map[Int, Char]]()
+
+    val five = "00000"
+    val fiveteen = "000000000000000"
+    val hundred = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
 
     // wyrzucamy niepotrzebne rzeczy
     atributeList.remove(23,1)
     atributeList.remove(21,1)
     atributeList.remove(18,1)
     atributeList.remove(8,1)
+    atributeList.remove(5,1)
     atributeList.remove(3,1)
     atributeList.remove(0,1)
 
@@ -26,111 +30,197 @@ case class FeatureExtractor() extends MapFunction[String, Sample] {
     val os = extractOS(atributeList(2))
 
     // robimy atyrbuty
-    val temp = ListBuffer[Int]()
+    //val temp = ListBuffer[Int]()
+    var tmp_str = ""
 
     if(atributeList(0) != "null") { // nie chce się timestamp przerobić na Int
-      //temp += atributeList(0).toInt
-    }
+      //temp += 0
+      //val timestamp = atributeList(0).toInt
+      //tmp_str += Integer.toBinaryString(timestamp)
+      //tmp_str = hundread + tmp_str
+    } else tmp_str = hundred + tmp_str
 
-    if(atributeList(1) != "null") {
-      temp += atributeList(1).toInt
-    }
 
-    temp += browser
-    temp += os
-
-    if(atributeList(4) != "null") {
-      val f4 = atributeList(4).hashCode
-      temp += f4.toInt
-    }
-
-    if(atributeList(5) != "null") {
-      temp += atributeList(5).toInt
-    }
-
-    if(atributeList(6) != "null") {
-      temp += atributeList(6).toInt
-    }
-
-    if(atributeList(7) != "null") {
-      val f7 = atributeList(7).hashCode
-      temp += f7.toInt
-    }
-
-    if(atributeList(8) != "null") {
-      val f8 = atributeList(8).hashCode
-      temp += f8.toInt
-    }
-
-    if(atributeList(9) != "null"){
-      val f9 = atributeList(9).hashCode
-      temp += f9.toInt
-    }
-
-    if(atributeList(10) != "null") {
-      val f10 = atributeList(10).hashCode
-      temp += f10.toInt
-    }
-
-    if(atributeList(11) != "null") {
-      temp += atributeList(11).toInt
-    }
-
-    if(atributeList(12) != "null") {
-      temp += atributeList(12).toInt
-    }
-
-    if(atributeList(13) != "null") {
-      temp += atributeList(13).toInt
-    }
-
-    if(atributeList(14) != "null") {
-      temp += atributeList(14).toInt
-    }
-
-    if(atributeList(15) != "null") {
-      temp += atributeList(15).toInt
-    }
-
-    if(atributeList(16) != "null") {
-      temp += atributeList(16).toInt
-    }
-
-    if(atributeList(17) != "null") {
-      temp += atributeList(17).toInt
-    }
-
-    val tmp = ListBuffer[String]()
-    temp.foreach { x =>
-      tmp += Integer.toBinaryString(x)
-    }
-
-    // mapowanie
-    var len = 0
-    tmp.foreach{ y =>
-      y.foreach { x =>
-        if (x == '1') {
-          features += Map(tmp.indexOf(x) + len -> 1)
-        }
+    if(atributeList(1) != "null") { // log type
+      val log_type = atributeList(1).toInt
+      var temp = Integer.toBinaryString(log_type)
+      for(x <- (temp.length()) until 5){
+        temp = '0' + temp
       }
-      len += y.length
+      tmp_str = temp + tmp_str
+    } else tmp_str = five + tmp_str
+
+    var tempbr = Integer.toBinaryString(browser) // browser
+    for(x <- (tempbr.length()) until 15){
+      tempbr = '0' + tempbr
+    }
+    tmp_str = tempbr + tmp_str
+
+    var tempos = Integer.toBinaryString(os) // os
+    for(x <- (tempos.length()) until 15){
+      tempos = '0' + tempos
+    }
+    tmp_str = tempos + tmp_str
+
+    if(atributeList(3) != "null") { // region
+      val region = atributeList(3).toInt
+      var temp = Integer.toBinaryString(region)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(4) != "null") { // city
+      val city = atributeList(4).toInt
+      var temp = Integer.toBinaryString(city)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(5) != "null") { // domain
+      val f5 = atributeList(5).hashCode
+      var domain = f5.toInt
+      var temp = Integer.toBinaryString(domain)
+      for(x <- (temp.length()) until 100){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = hundred + tmp_str
+
+    if(atributeList(6) != "null") { // url
+      val f6 = atributeList(6).hashCode
+      val url = f6.toInt
+      var temp = Integer.toBinaryString(url)
+      for(x <- (temp.length()) until 100){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = hundred + tmp_str
+
+    if(atributeList(7) != "null") { // anonymous url
+      val f7 = atributeList(7).hashCode
+      val an_url = f7.toInt
+      var temp = Integer.toBinaryString(an_url)
+      for(x <- (temp.length()) until 100){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = hundred + tmp_str
+
+    if(atributeList(8) != "null") { // ad slot id
+      val f8 = atributeList(8).hashCode
+      val slot_id = f8.toInt
+      var temp = Integer.toBinaryString(slot_id)
+      for(x <- (temp.length()) until 100){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = hundred + tmp_str
+
+    if(atributeList(9) != "null"){ // ad slot width
+      val slot_width = atributeList(9).toInt
+      var temp = Integer.toBinaryString(slot_width)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(10) != "null") { // ad slot height
+      val slot_height = atributeList(10).toInt
+      var temp = Integer.toBinaryString(slot_height)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(11) != "null") { // ad slot visibility
+      val slot_vis = atributeList(11).toInt
+      var temp = Integer.toBinaryString(slot_vis)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(12) != "null") { //  ad slot format
+      val slot_format = atributeList(12).toInt
+      var temp = Integer.toBinaryString(slot_format)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(13) != "null") { // ad slot florr price
+      val slot_floor_price = atributeList(13).toInt
+      var temp = Integer.toBinaryString(slot_floor_price)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(14) != "null") { // bidding price
+      val bid_price = atributeList(14).toInt
+      var temp = Integer.toBinaryString(bid_price)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(15) != "null") { // paying price
+      val pay_price = atributeList(15).toInt
+      var temp = Integer.toBinaryString(pay_price)
+      for(x <- (temp.length()) until 15){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else tmp_str = fiveteen + tmp_str
+
+    if(atributeList(16) != "null") { // advertiser id
+      val adv_id = atributeList(16).toInt
+      var temp = Integer.toBinaryString(adv_id)
+      for(x <- (temp.length()) until 30){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
+    } else {
+      tmp_str = fiveteen + tmp_str
+      tmp_str = fiveteen + tmp_str
     }
 
-    Sample(label, features)
+    val reverseStr = tmp_str.reverse
+
+    var lastindex = 0
+    reverseStr.foreach({ x =>
+      if(x == '1'){
+        val y = reverseStr.indexOf(x, lastindex)
+        features += Map(y -> '1')
+        lastindex = y + 1
+      }
+    })
+
+    Sample(logtype, features)
   }
 
   def extractBrowser(str: String): Int = {
-    if (str.contains("Mozilla")) 0
-    else if (str.contains("MQQ")) 1
-    else if (str.contains("Safari")) 2
-    else if (str.contains("Chrome")) 3
+    if (str.contains("MQQ")) 0
+    else if (str.contains("Safari")) 1
+    else if (str.contains("Chrome")) 2
+    else if (str.contains("Mozilla")) 3
     else 4
   }
 
   def extractOS(str: String): Int = {
-    if (str.contains("Windows")) 0
-    else if (str.contains("Mac")) 1
-    else if (str.contains("Linux")) 2
+    if (str.contains("Mac")) 0
+    else if (str.contains("Linux")) 1
+    else if (str.contains("Windows")) 2
     else 3
   }
 
