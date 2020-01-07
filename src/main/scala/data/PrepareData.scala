@@ -14,7 +14,7 @@ object flinkwc {
 
     val sampletext = sampleStream.map(MakeString())
 
-    sampletext.writeAsText("clk1.txt", FileSystem.WriteMode.OVERWRITE)
+    sampletext.writeAsText("output.txt", FileSystem.WriteMode.OVERWRITE)
 
     env.execute("Window Stream")
   }
