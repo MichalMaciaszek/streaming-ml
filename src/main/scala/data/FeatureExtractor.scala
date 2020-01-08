@@ -29,17 +29,18 @@ case class FeatureExtractor(logtype: String) extends MapFunction[String, Sample]
     val browser = extractBrowser(atributeList(2))
     val os = extractOS(atributeList(2))
 
-    // robimy atyrbuty
-    //val temp = ListBuffer[Int]()
+
     var tmp_str = ""
 
     if(atributeList(0) != "null") { // nie chce się timestamp przerobić na Int
       //temp += 0
-      //val timestamp = atributeList(0).toInt
-      //tmp_str += Integer.toBinaryString(timestamp)
-      //tmp_str = hundread + tmp_str
+      val timestamp = atributeList(0).toLong
+      var temp = Integer.toBinaryString(timestamp.toInt)
+      for(x <- (temp.length()) until 100){
+        temp = '0' + temp
+      }
+      tmp_str = temp + tmp_str
     } else tmp_str = hundred + tmp_str
-
 
     if(atributeList(1) != "null") { // log type
       val log_type = atributeList(1).toInt
@@ -82,7 +83,7 @@ case class FeatureExtractor(logtype: String) extends MapFunction[String, Sample]
 
     if(atributeList(5) != "null") { // domain
       val f5 = atributeList(5).hashCode
-      var domain = f5.toInt
+      val domain = f5.toInt
       var temp = Integer.toBinaryString(domain)
       for(x <- (temp.length()) until 100){
         temp = '0' + temp
