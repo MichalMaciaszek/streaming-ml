@@ -2,17 +2,29 @@ name := "streaming-ml"
 
 version := "0.1"
 
-scalaVersion := "2.12.10"
+scalaVersion := "2.11.12"
+val flinkVersion = "1.9.1"
+val log4jVersion = "2.11.0"
 
-// https://mvnrepository.com/artifact/org.apache.flink/flink-scala
-libraryDependencies += "org.apache.flink" %% "flink-scala" % "1.9.1"
+val dependencies = Seq(
+  // Flink
+  // https://mvnrepository.com/artifact/org.apache.flink/flink-scala
+  "org.apache.flink" %% "flink-scala" % flinkVersion,
+  // https://mvnrepository.com/artifact/org.apache.flink/flink-core
+  "org.apache.flink" % "flink-core" % flinkVersion,
+  // https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-scala
+  "org.apache.flink" %% "flink-streaming-scala" % flinkVersion,
+  "org.apache.flink" %% "flink-runtime-web" % flinkVersion,
 
-// https://mvnrepository.com/artifact/org.apache.flink/flink-core
-libraryDependencies += "org.apache.flink" % "flink-core" % "1.9.1"
+  // logging
+  "org.slf4j" % "slf4j-api" % "1.7.25",
+  "org.apache.logging.log4j" % "log4j-slf4j-impl" % log4jVersion % Runtime,
+  "org.apache.logging.log4j" % "log4j-api" % log4jVersion % Runtime,
+  "org.apache.logging.log4j" % "log4j-core" % log4jVersion % Runtime,
+  "org.apache.logging.log4j" % "log4j-jcl" % log4jVersion % Runtime
+)
 
-// https://mvnrepository.com/artifact/org.apache.flink/flink-table
-libraryDependencies += "org.apache.flink" %% "flink-table" % "1.7.2" % "provided"
+libraryDependencies ++= dependencies
 
-// https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-scala
-libraryDependencies += "org.apache.flink" %% "flink-streaming-scala" % "1.9.1"
-
+// override default resource directory
+resourceDirectory in Compile := baseDirectory.value / "src/main/resources"
