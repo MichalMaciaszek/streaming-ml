@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Flinku-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Flinku-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/streaming-ml.iml" filepath="$PROJECT_DIR$/.idea/modules/streaming-ml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/streaming-ml-build.iml" filepath="$PROJECT_DIR$/.idea/modules/streaming-ml-build.iml" />
     </modules>
   </component>
 </project>
