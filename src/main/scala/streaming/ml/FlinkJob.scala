@@ -1,15 +1,13 @@
 package streaming.ml
 
+import org.apache.flink.api.java.functions.NullByteKeySelector
 import org.apache.flink.api.java.utils.ParameterTool
 import org.apache.flink.configuration.{ConfigConstants, Configuration}
-import org.apache.flink.streaming.api.scala._
 import org.apache.flink.core.fs.FileSystem
+import org.apache.flink.streaming.api.scala._
 import streaming.ml.features.FeatureExtractor
 
-// bid  00
-// clk  01
-// conv 10
-// imp  11
+import scala.collection.mutable
 
 object FlinkJob {
   def main(args: Array[String]) {
@@ -25,8 +23,26 @@ object FlinkJob {
 
     val sampleStream = stream.map(FeatureExtractor())
 
-    sampleStream.writeAsText("clk1.txt", FileSystem.WriteMode.OVERWRITE)
+    sampleStream.writeAsText("samples.libsvm", FileSystem.WriteMode.OVERWRITE)
 
-    env.execute("Window Stream")
+    val lr = LogisticRegression()
+    val predictions = sampleStream
+      .keyBy(new NullByteKeySelector[Sample])
+      .mapWithState((sample: Sample, state: Option[mutable.HashMap[Int, Double]]) => {
+        state match {
+          case Some(model) =>
+            val p = lr.predict(model, sample.featureVector)
+            val m = lr.fit(model, sample.featureVector, sample.label)
+            ((sample.label, p), Some(m))
+          case None =>
+            ((sample.label, 0.0), Some(lr.fit(mutable.HashMap.empty, sample.featureVector, sample.label)))
+        }
+      })
+
+    predictions
+      .map(p => p._1 + " " + p._2)
+      .writeAsText("predictions.txt", FileSystem.WriteMode.OVERWRITE)
+
+    env.execute("Streaming ML")
   }
 }

@@ -17,7 +17,7 @@ case class FeatureExtractor() extends MapFunction[String, Sample] {
 
     val featureValues = featureOffsets.map(f => f._1.extract(event, f._2)).toMap
 
-    Sample(event.data("LogType").toInt > 1, featureValues)
+    Sample(if (event.data("LogType").toInt > 1) 1 else 0, featureValues)
     //    val atributeList = value.split("\\t").toBuffer
     //    var features = ListBuffer[Map[Int, Char]]()
     //
