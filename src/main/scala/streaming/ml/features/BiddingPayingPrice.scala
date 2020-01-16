@@ -4,7 +4,7 @@ import streaming.ml.RawEvent
 
 case class BiddingPayingPrice(columnName: String) extends Feature {
 
-  private val PRICES = Vector(0, 100, 200, 400, 700, 100)
+  private val PRICES = Vector(0, 100, 200, 400, 700, 1000)
 
   override def size: Int = PRICES.size + 1
 
