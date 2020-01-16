@@ -6,16 +6,19 @@ import streaming.ml.{RawEvent, Sample}
 case class FeatureExtractor() extends MapFunction[String, Sample] {
 
   val definitions: List[Feature] = List(
-    Time, Day, BrowserFeature, OsFeature, HashingFeature("Region", 100), 
-    HashingFeature("City", 1000), AdSlotFormat, AdSlotVisibility)
+    Time, Day, BrowserFeature, OsFeature, HashingFeature("Region",100), HashingFeature("City",1000),
+    HashingFeature("Domain",10000), HashingFeature("URL",10000), HashingFeature("AnonymousUrlId",10000),
+    HashingFeature("AdSlotId",10000), HashingFeature("AdSlotWidth",1000), HashingFeature("AdSlotHeight", 1000),
+    AdSlotVisibility, AdSlotFormat,  FloorPrice, BiddingPayingPrice("BiddingPrice"), BiddingPayingPrice("PayingPrice"),
+    HashingFeature("AdvertiserId",10000))
 
   lazy val featureOffsets: List[(Feature, Int)] = definitions.zip(
     definitions.dropRight(1).foldLeft(List(0))((offsets, f) => offsets :+ (offsets.last + f.size))
   )
 
   override def map(value: String): Sample = {
-    val event = RawEvent(value)
-
+    val event = RawEvent(value) 
+    
     val featureValues = featureOffsets.map(f => f._1.extract(event, f._2)).toMap
 
     Sample(if (event.data("LogType").toInt > 1) 1 else 0, featureValues)
