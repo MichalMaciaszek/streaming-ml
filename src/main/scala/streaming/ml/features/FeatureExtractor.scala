@@ -10,7 +10,7 @@ case class FeatureExtractor() extends MapFunction[String, Sample] {
     HashingFeature("Domain",10000), HashingFeature("CreativeId",1000),
     HashingFeature("AdSlotWidth",100), HashingFeature("AdSlotHeight", 100),
     AdSlotVisibility, AdSlotFormat,  FloorPrice, BiddingPayingPrice("BiddingPrice"),
-    BiddingPayingPrice("PayingPrice")
+    BiddingPayingPrice("PayingPrice"), HashingFeature("UserTags", 1000)
   )
 
   lazy val featureOffsets: List[(Feature, Int)] = definitions.zip(
