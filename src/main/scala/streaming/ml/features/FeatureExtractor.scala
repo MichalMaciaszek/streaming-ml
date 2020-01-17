@@ -7,10 +7,11 @@ case class FeatureExtractor() extends MapFunction[String, Sample] {
 
   val definitions: List[Feature] = List(
     Time, Day, BrowserFeature, OsFeature, HashingFeature("Region",100), HashingFeature("City",1000),
-    HashingFeature("Domain",10000), HashingFeature("URL",10000), HashingFeature("AnonymousUrlId",10000),
-    HashingFeature("AdSlotId",10000), HashingFeature("AdSlotWidth",1000), HashingFeature("AdSlotHeight", 1000),
-    AdSlotVisibility, AdSlotFormat,  FloorPrice, BiddingPayingPrice("BiddingPrice"), BiddingPayingPrice("PayingPrice"),
-    HashingFeature("AdvertiserId",10000))
+    HashingFeature("Domain",10000), HashingFeature("CreativeId",1000),
+    HashingFeature("AdSlotWidth",100), HashingFeature("AdSlotHeight", 100),
+    AdSlotVisibility, AdSlotFormat,  FloorPrice, BiddingPayingPrice("BiddingPrice"),
+    BiddingPayingPrice("PayingPrice")
+  )
 
   lazy val featureOffsets: List[(Feature, Int)] = definitions.zip(
     definitions.dropRight(1).foldLeft(List(0))((offsets, f) => offsets :+ (offsets.last + f.size))
