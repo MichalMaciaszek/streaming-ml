@@ -6,7 +6,7 @@ object AdSlotVisibility extends Feature {
 
   private val VISIBILITIES = Vector("0", "1", "2")
 
-  override def size: Int = VISIBILITIES.size
+  override def size: Int = VISIBILITIES.size + 1
 
   override def extract(event: RawEvent): (Int, Double) = {
     val vs = event.data("AdSlotVisibility").toLowerCase

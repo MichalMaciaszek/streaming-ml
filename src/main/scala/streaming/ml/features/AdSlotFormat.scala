@@ -6,7 +6,7 @@ object AdSlotFormat extends Feature {
 
   private val FORMATS = Vector("0", "1", "2")
 
-  override def size: Int = FORMATS.size
+  override def size: Int = FORMATS.size + 1
 
   override def extract(event: RawEvent): (Int, Double) = {
     val format = event.data("AdSlotFormat").toLowerCase

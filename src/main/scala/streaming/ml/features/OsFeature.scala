@@ -6,7 +6,7 @@ object OsFeature extends Feature {
 
   private val BROWSERS = Vector("windows", "ios", "mac", "android", "linux")
 
-  override def size: Int = BROWSERS.size
+  override def size: Int = BROWSERS.size + 1
 
   override def extract(event: RawEvent): (Int, Double) = {
     val ua = event.data("UserAgent").toLowerCase
