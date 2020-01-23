@@ -25,6 +25,6 @@ val dependencies = Seq(
 )
 
 libraryDependencies ++= dependencies
-
+libraryDependencies += "com.opendatagroup" % "hadrian" % "0.8.5"
 // override default resource directory
 resourceDirectory in Compile := baseDirectory.value / "src/main/resources"
