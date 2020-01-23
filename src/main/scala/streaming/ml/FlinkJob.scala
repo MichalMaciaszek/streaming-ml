@@ -22,7 +22,6 @@ object FlinkJob {
     val stream: DataStream[String] = env.readTextFile(input)
 
     val sampleStream = stream.map(FeatureExtractor())
-
     sampleStream.writeAsText("samples.libsvm", FileSystem.WriteMode.OVERWRITE)
 
     val lr = LogisticRegression()
@@ -38,10 +37,14 @@ object FlinkJob {
             ((sample.label, 0.0), Some(lr.fit(mutable.HashMap.empty, sample.featureVector, sample.label)))
         }
       })
+    predictions
+      .map(p => p._1 + "\t" + p._2)
+      .writeAsText("predictions.tsv", FileSystem.WriteMode.OVERWRITE)
 
     predictions
-      .map(p => p._1 + " " + p._2)
-      .writeAsText("predictions.txt", FileSystem.WriteMode.OVERWRITE)
+      .countWindowAll(100000, 20000)
+      .process(PredictionsEvaluator())
+      .writeAsText("metrics.tsv", FileSystem.WriteMode.OVERWRITE)
 
     env.execute("Streaming ML")
   }

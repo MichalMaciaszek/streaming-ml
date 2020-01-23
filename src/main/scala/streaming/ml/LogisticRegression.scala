@@ -23,7 +23,7 @@ case class LogisticRegression(initWeight: Double = 0.05,
     // update weights
     // w_i = w_i + learning_rate * [ (y - p) * x_i - lambda * w_i ]
     for (feat <- featureVector.keys) {
-      model(feat) = model(feat) * (1 - lambda) + learningRate * (label - p)
+      model(feat) = model(feat) * (1 - lambda) + learningRate * (label - p) * featureVector(feat)
     }
 
     model

@@ -16,6 +16,8 @@ val dependencies = Seq(
   "org.apache.flink" %% "flink-streaming-scala" % flinkVersion,
   "org.apache.flink" %% "flink-runtime-web" % flinkVersion,
 
+  "com.opendatagroup" % "hadrian" % "0.8.5",
+
   "org.scalatest" %% "scalatest" % "3.0.5" % Test,
 
   // logging
