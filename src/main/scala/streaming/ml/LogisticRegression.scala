@@ -6,7 +6,7 @@ import scala.util.Random
 case class LogisticRegression(initWeight: Double = 0.05,
                               learningRate: Double = 0.01,
                               lambda: Double = 1E-6
-                             ) {
+                             ) extends Estimator[mutable.HashMap[Int, Double]] {
 
   private def nextInitWeight(): Double = (Random.nextFloat - 0.5) * initWeight
 
