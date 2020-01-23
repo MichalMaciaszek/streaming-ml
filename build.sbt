@@ -16,6 +16,8 @@ val dependencies = Seq(
   "org.apache.flink" %% "flink-streaming-scala" % flinkVersion,
   "org.apache.flink" %% "flink-runtime-web" % flinkVersion,
 
+  "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+
   // logging
   "org.slf4j" % "slf4j-api" % "1.7.25",
   "org.apache.logging.log4j" % "log4j-slf4j-impl" % log4jVersion % Runtime,
