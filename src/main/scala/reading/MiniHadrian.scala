@@ -1,19 +1,27 @@
-import java.io.{FileInputStream, FileOutputStream}
+import java.io.{File, FileInputStream, FileOutputStream, PrintWriter}
 
 import com.opendatagroup.hadrian.jvmcompiler.PFAEngine
+import org.apache.flink.core.fs.FileSystem
+import org.apache.spark
+import reading.PFAEstimator
+import streaming.ml.features.FeatureExtractor
 
 object MiniHadrian {
   def main(args: Array[String]) {
-    val engine = PFAEngine.fromJson(new FileInputStream("to_deploy")).head
 
-    engine.callGraph("(action)").foreach(println)
 
-    val inputData = engine.jsonInputIterator(new FileInputStream("data3.json"))
-    var output: Any = 1
-    while (inputData.hasNext) {
-      output = engine.action(inputData.next())
-      println(output)
-    }
+    val Est = PFAEstimator()
+
+    var a = Vector.fill(13366)(0.0)
+    val start = """{"x":["""
+    val end = """]}"""
+    val json = a.mkString(start, ",", end)
+
+    val pw = new PrintWriter(new File("file.json"))
+    pw.write(json)
+    pw.close
+
+    Est.predict("file.json")
 
   }
 }

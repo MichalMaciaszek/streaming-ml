@@ -30,5 +30,14 @@ val dependencies = Seq(
 
 libraryDependencies ++= dependencies
 libraryDependencies += "com.opendatagroup" % "hadrian" % "0.8.5"
+//libraryDependencies += "org.apache.spark" %% "spark-core" % "1.4.1"
+val sparkVersion = "1.6.1"
+libraryDependencies ++= Seq(
+  "org.apache.spark" %% "spark-core" % sparkVersion,
+  "org.apache.spark" %% "spark-streaming" % sparkVersion,
+  "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion,
+"org.apache.spark" %% "spark-sql" % sparkVersion
+)
+
 // override default resource directory
 resourceDirectory in Compile := baseDirectory.value / "src/main/resources"
