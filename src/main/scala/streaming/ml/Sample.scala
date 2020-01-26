@@ -9,3 +9,14 @@ case class Sample(label: Int, featureVector: Map[Int, Double]) {
       ) mkString " ")
   }
 }
+
+object Sample {
+  def apply(s: String): Sample = {
+    val values = s.trim.split(' ')
+    val label = values.head.toInt
+    val features = values.tail.map(_.split(':')).map(f => f(0).toInt -> f(1).toDouble).toMap
+    Sample(label, features)
+  }
+}
+
+
