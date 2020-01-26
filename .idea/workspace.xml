@@ -1,9 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d592d1ba-807f-47f9-9fb4-a80c511ea6ac" name="Default Changelist" comment="">
+    <list default="true" id="d592d1ba-807f-47f9-9fb4-a80c511ea6ac" name="Default Changelist" comment="It's 1:20, and I love what I did so much, that I can comment as long as I want. Featuring: Lacking of size for vector and &quot;what-the-hell-does-Unit-mean-here-?&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_esotericsoftware_kryo_kryo_2_24_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_esotericsoftware_minlog_minlog_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_scopt_scopt_2_11_3_5_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_googlecode_efficient_java_matrix_library_ejml_0_24_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_opendatagroup_hadrian_0_8_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_thesamet_kdtree_2_11_1_0_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_twitter_chill_2_11_0_7_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_twitter_chill_java_0_7_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_slf4j_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_3_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_cli_commons_cli_1_3_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_collections_commons_collections_3_2_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_io_commons_io_2_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_logging_commons_logging_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__joda_time_joda_time_2_8_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_avro_avro_1_7_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_commons_commons_compress_1_18_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_commons_commons_csv_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_commons_commons_lang3_3_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_commons_commons_math3_3_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_annotations_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_clients_2_11_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_core_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_hadoop_fs_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_java_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_metrics_core_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_optimizer_2_11_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_queryable_state_client_java_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_runtime_2_11_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_runtime_web_2_11_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_scala_2_11_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_asm_6_6_2_1_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_guava_18_0_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_jackson_2_9_8_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_shaded_netty_4_1_32_Final_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_streaming_java_2_11_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_flink_streaming_scala_2_11_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_flink_force_shading_1_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_logging_log4j_log4j_api_2_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_logging_log4j_log4j_core_2_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_logging_log4j_log4j_jcl_2_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_logging_log4j_log4j_slf4j_impl_2_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_clapper_grizzled_slf4j_2_11_1_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_codehaus_jackson_jackson_core_asl_1_9_13_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_codehaus_jackson_jackson_mapper_asl_1_9_13_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_javassist_javassist_3_19_0_GA_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_joda_joda_convert_1_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_jruby_jcodings_jcodings_1_0_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_jruby_joni_joni_2_1_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_objenesis_objenesis_2_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_compiler_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_25_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_xerial_snappy_snappy_java_1_1_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_yaml_snakeyaml_1_13_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/IdeaProjects.streaming-ml.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/project.streaming-ml-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advertiser.2997-test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c7809c46e75bbd7da1f7$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c7809c46e75bbd7da1f7.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c7809c46e75bbd7da1f7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/reading/PFAEstimatorTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/META-INF/IdeaProjects.streaming-ml.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/MiniHadrian$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/MiniHadrian.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/FlinkJob$$anon$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/FlinkJob$$anon$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/FlinkJob$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/FlinkJob$$anonfun$main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/FlinkJob$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/FlinkJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/LogisticRegression$$anonfun$fit$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/LogisticRegression$$anonfun$fit$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/LogisticRegression$$anonfun$fit$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/LogisticRegression$$anonfun$predict$1$$anonfun$apply$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/LogisticRegression$$anonfun$predict$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/LogisticRegression$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/LogisticRegression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/RawEvent$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/RawEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/Sample$$anonfun$toString$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/Sample$$anonfun$toString$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/Sample$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/Sample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotFormat$$anonfun$extract$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotFormat$$anonfun$extract$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotFormat$$anonfun$extract$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotFormat$$anonfun$extract$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotFormat$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotFormat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotVisibility$$anonfun$extract$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotVisibility$$anonfun$extract$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotVisibility$$anonfun$extract$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotVisibility$$anonfun$extract$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotVisibility$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/AdSlotVisibility.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/BiddingPayingPrice$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/BiddingPayingPrice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/BrowserFeature$$anonfun$extract$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/BrowserFeature$$anonfun$extract$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/BrowserFeature$$anonfun$extract$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/BrowserFeature$$anonfun$extract$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/BrowserFeature$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/BrowserFeature.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/Day$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/Day.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/Feature$class.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/Feature.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/FeatureExtractor$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/FeatureExtractor$$anonfun$featureOffsets$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/FeatureExtractor$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/FeatureExtractor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/FloorPrice$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/FloorPrice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/HashingFeature$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/HashingFeature.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/OsFeature$$anonfun$extract$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/OsFeature$$anonfun$extract$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/OsFeature$$anonfun$extract$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/OsFeature$$anonfun$extract$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/OsFeature$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/OsFeature.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/Time$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/classes/streaming/ml/features/Time.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/data/log_reg.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/data/log_reg.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.json" beforeDir="false" afterPath="$PROJECT_DIR$/file.jsons" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/count/SocketTextStreamWordCount.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/count/WordCount.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/reading/MiniHadrian.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/reading/MiniHadrian.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/reading/PFAEstimator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/reading/PFAEstimator.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,33 +201,59 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Scala Object" />
+        <option value="ScalaTest Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UWhzqIswTuGBoXV46hFbrWRwXF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/inż/Flink/slf4j-api-1.7.9.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="ScalaTest" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest" value="org.scalatest.FunSuite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.70642203" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="reading" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cebula\IdeaProjects\streaming-ml" />
+      <recent name="C:\Users\Cebula\IdeaProjects\streaming-ml\src" />
+      <recent name="C:\Users\Cebula\IdeaProjects\streaming-ml\src\main\scala\reading" />
+      <recent name="C:\Users\Cebula\IdeaProjects\streaming-ml\src\main\scala\org\codehaus\jackson" />
+      <recent name="C:\Users\Cebula\IdeaProjects\streaming-ml\src\main\scala" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="org.scalatest.FunSuite" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Cebula\IdeaProjects\streaming-ml" />
+      <recent name="C:\Users\Cebula\IdeaProjects\streaming-ml\src" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -72,10 +261,43 @@
       <command value="sourceGenerators in Compile &lt;&lt;= (sourceGenerators in Compile) (g =&gt; Seq(g.last))  " />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="ScalaTest.PFAEstimatorTest.testPredict">
+    <configuration name="MiniHadrian (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="MiniHadrian" />
+      <module name="IdeaProjects.streaming-ml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniHadrian" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="reading.MiniHadrian" />
+      <module name="IdeaProjects.streaming-ml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="log_reg" />
       <module name="Flinku" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hadrian2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="reading.hadrian2" />
+      <module name="IdeaProjects.streaming-ml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,6 +310,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PFAEstimatorTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="IdeaProjects.streaming-ml" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="reading.PFAEstimatorTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Users\Cebula\IdeaProjects\streaming-ml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PFAEstimatorTest.testPredict" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="IdeaProjects.streaming-ml" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="reading.PFAEstimatorTest" />
+      <option name="testName" value="testPredict" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Users\Cebula\IdeaProjects\streaming-ml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="ScalaTest.PFAEstimatorTest.testPredict" />
+        <item itemvalue="Application.MiniHadrian (1)" />
+        <item itemvalue="ScalaTest.PFAEstimatorTest" />
+        <item itemvalue="Application.hadrian2" />
+        <item itemvalue="Application.MiniHadrian" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="availableProjects">
@@ -95,18 +367,18 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="Flinku" />
+              <option name="name" value="streaming-ml" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="flinku [file:/home/kate/IdeaProjects/Flinku/]" />
+                <option name="name" value="streaming-ml [file:/C:/Users/Cebula/IdeaProjects/streaming-ml/]" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value="Flinku-build" />
+                <option name="name" value="streaming-ml-build" />
                 <option name="path" value="$PROJECT_DIR$/project" />
               </ExternalProjectPojo>
             </list>
@@ -116,8 +388,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3151044921250" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="3462565587" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="780477886" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1134086237" />
       </map>
     </option>
@@ -145,20 +416,52 @@
       <option name="presentableId" value="Default" />
       <updated>1575478523911</updated>
     </task>
+    <task id="LOCAL-00001" summary="Hadrian added">
+      <created>1579795246395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579795246395</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Hadrian Class, version &quot;Diablo2 on Hardcore Mode&quot;">
+      <created>1579977363206</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579977363207</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Hadrian added" />
+    <MESSAGE value="Hadrian Class, version &quot;Diablo2 on Hardcore Mode&quot;" />
+    <MESSAGE value="It's 1:20, and I love what I did so much, that I can comment as long as I want. Featuring: Lacking of size for vector and &quot;what-the-hell-does-Unit-mean-here-?&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="It's 1:20, and I love what I did so much, that I can comment as long as I want. Featuring: Lacking of size for vector and &quot;what-the-hell-does-Unit-mean-here-?&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="287" y="58" key="#Project_Structure" timestamp="1575491833046">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="287" y="58" key="#Project_Structure/67.27.1299.741@67.27.1299.741" timestamp="1575491833046" />
-    <state x="98" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576773019571">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="499" y="168" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579997868564">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="499" y="168" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1579997868564" />
+    <state x="37" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579556002282">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="37" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1579556002282" />
     <state x="98" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1576773019571" />
-    <state x="524" y="97" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1576694451663">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="506" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579630847724">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="506" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1579630847724" />
+    <state x="540" y="78" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1579974677840">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1579974677840" />
     <state x="524" y="97" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1576694451663" />
     <state x="467" y="171" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576704844342">
       <screen x="67" y="27" width="1299" height="741" />
@@ -180,65 +483,102 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="150" width="524" height="484" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/67.27.1299.741@67.27.1299.741" timestamp="1575490779834" />
+    <state x="362" y="8" key="CommitChangelistDialog2" timestamp="1579998099316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="362" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579998099316" />
+    <state width="426" height="466" key="DebuggerActiveHint" timestamp="1579632989215">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="426" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1579632989215" />
     <state x="437" y="125" width="735" height="484" key="FileChooserDialogImpl" timestamp="1576704932405">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="437" y="125" width="735" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1576704932405" />
-    <state width="1253" height="166" key="GridCell.Tab.0.bottom" timestamp="1576705028799">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1579998099434">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579998099434" />
     <state width="1253" height="166" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576705028799" />
-    <state width="1253" height="166" key="GridCell.Tab.0.center" timestamp="1576705028798">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1493" height="231" key="GridCell.Tab.0.center" timestamp="1579998099434">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579998099434" />
     <state width="1253" height="166" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576705028798" />
-    <state width="1253" height="166" key="GridCell.Tab.0.left" timestamp="1576705028797">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1493" height="231" key="GridCell.Tab.0.left" timestamp="1579998099433">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579998099433" />
     <state width="1253" height="166" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576705028797" />
-    <state width="1253" height="166" key="GridCell.Tab.0.right" timestamp="1576705028798">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1493" height="231" key="GridCell.Tab.0.right" timestamp="1579998099434">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579998099434" />
     <state width="1253" height="166" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576705028798" />
-    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1576622191917">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1579997338790">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579997338790" />
     <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576622191917" />
-    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1576622191917">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1579997338790">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579997338790" />
     <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1576622191917" />
-    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1576622191917">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1579997338790">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579997338790" />
     <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1576622191917" />
-    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1576622191917">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1579997338790">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579997338790" />
     <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1576622191917" />
-    <state x="158" y="27" width="900" height="730" key="SettingsEditor" timestamp="1576776882815">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="439" y="112" key="NewModule_or_Project.wizard" timestamp="1579550804645">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="439" y="112" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1579550804645" />
+    <state x="108" y="0" width="900" height="730" key="SettingsEditor" timestamp="1579559065129">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="108" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579559065129" />
     <state x="158" y="27" width="900" height="730" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1576776882815" />
-    <state x="371" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1577028627887">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1579977401773">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579977401773" />
+    <state x="359" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1579970409852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="359" y="219" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579970409852" />
     <state x="371" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1577028627887" />
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579951861378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1579951861378" />
     <state x="67" y="27" width="710" height="741" key="find.popup" timestamp="1575496265459">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="67" y="27" width="710" height="741" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1575496265459" />
-    <state x="67" y="123" width="1289" height="547" key="new project wizard" timestamp="1576748582775">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="0" y="107" width="1289" height="547" key="new project wizard" timestamp="1579549863878">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="0" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1579549863878" />
     <state x="67" y="123" width="1289" height="547" key="new project wizard/67.27.1299.741@67.27.1299.741" timestamp="1576748582775" />
-    <state x="379" y="175" key="run.anything.popup" timestamp="1575480896428">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="867" y="180" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1579977608015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="867" y="180" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/0.0.1536.824@0.0.1536.824" timestamp="1579977608015" />
+    <state x="369" y="165" width="672" height="677" key="run.anything.popup" timestamp="1579994169302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="369" y="165" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1579994169302" />
     <state x="379" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1575480896428" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1575496489011">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="369" y="69" width="795" height="754" key="search.everywhere.popup" timestamp="1579981481201">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="369" y="69" width="795" height="754" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1579981481201" />
     <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1575496489011" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
