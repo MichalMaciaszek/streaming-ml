@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects.streaming-ml.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects.streaming-ml.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.streaming-ml-build.iml" filepath="$PROJECT_DIR$/.idea/modules/project.streaming-ml-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/streaming-ml.iml" filepath="$PROJECT_DIR$/.idea/modules/streaming-ml.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/streaming-ml-build.iml" filepath="$PROJECT_DIR$/.idea/modules/streaming-ml-build.iml" />
     </modules>
