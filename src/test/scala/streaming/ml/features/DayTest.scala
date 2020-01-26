@@ -5,8 +5,15 @@ import streaming.ml.RawEvent
 
 class DayTest extends FunSuite {
 
-  test("testDayExtract") {
-    val sample = RawEvent("4acf9f34b3d6f487b8a9294fc6091743\t20131023164806000\t1\tDAJI6lAbzHq\t\"Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; HTC One Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30\"\t124.164.238.*\t15\t20\tnull\t1c0a6c3e4ec60739f2e574616fd25c43\t800184b4781c886da19467797857c708\tnull\t555493003\t320\t50\tOtherView\tNa\t5\t11908\t277\t5\tnull\t2997\tnull")
+  test("testDayExtract_1") {
+    val sample = RawEvent("f1ec266f9a99c4d7dc56de5523e72c30\t20130611000103446\t1\tZ0THZpN6L6ByeQj\tMozilla/5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1\t61.131.48.*\t124\t129\t2\ttrqRTuToMTNUjM9r5rMi\t816aa0d5ae0b172a675569557691f2ed\tnull\t433287550\t468\t60\t1\t0\t5\t612599432d200b093719dd1f372f7a30\t300\t68\tbebefa5efe83beee17a3d245e7c5085b\t1458\t13800,10006,10063,10111")
+    val result = Day.extract(sample)
+    val expected = (0,1.0)
+    assertResult(expected)(result)
+  }
+
+  test("testDayExtract_2") {
+    val sample = RawEvent("bd859649acd561aa30c85c918694a84\t20130606145622025\t1\tZYj7Li96Oc2Igt\tMozilla/5.0 (Windows NT 6.1; rv:21.0) Gecko/20100101 Firefox/21.0\t222.180.64.*\t275\t275\t3\t5F1RQS9rg5scFsf\t56706886d6e5ca308fe07d0c21d409ec\tnull\tNews_F_Width1\t1000\t90\t0\t0\t80\t832b91d59d0cb5731431653204a76c0e\t300\t80\tbebefa5efe83beee17a3d245e7c5085b\t1458\t10077,10024,10083,10006,10079,10057,10059,14273,10075,13403,10063,10052,10110")
     val result = Day.extract(sample)
     val expected = (2,1.0)
     assertResult(expected)(result)
