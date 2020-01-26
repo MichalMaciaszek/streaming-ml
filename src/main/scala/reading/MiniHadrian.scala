@@ -1,22 +1,18 @@
-import java.io.{File, FileInputStream, FileOutputStream, PrintWriter}
-import scala.io.Source
+import java.io.FileInputStream
+
 import com.opendatagroup.hadrian.jvmcompiler.PFAEngine
-import org.apache.flink.api.java.utils.ParameterTool
-import org.apache.flink.configuration.{ConfigConstants, Configuration}
-import org.apache.flink.core.fs.FileSystem
-import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
-import org.apache.spark
 import reading.PFAEstimator
 import streaming.ml.Sample
 import streaming.ml.features.FeatureExtractor
 
 import scala.collection.mutable.ListBuffer
+import scala.io.Source
 
 object MiniHadrian {
   def main(args: Array[String]) {
 
 
-    val Est = PFAEstimator(PFAEngine.fromJson(new FileInputStream("to_deploy")).head)
+    val Est = PFAEstimator(PFAEngine.fromJson(new FileInputStream("to_deploy")).head, 0)
     val lines = Source.fromFile("advertiser.2997-test.txt")
       .getLines().take(1).toList
     var samples = ListBuffer[Sample]()

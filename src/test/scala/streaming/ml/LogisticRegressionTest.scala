@@ -16,7 +16,7 @@ class LogisticRegressionTest extends FunSuite with BeforeAndAfterEach {
   override def beforeEach() {
     // read test samples
     val stream: InputStream = getClass.getResourceAsStream("/advertiser.1458-test-sample.libsvm")
-    samples = try io.Source.fromInputStream(stream).getLines.map(Sample(_)).toArray finally stream.close()
+    samples = try scala.io.Source.fromInputStream(stream).getLines.map(Sample(_)).toArray finally stream.close()
     // fit model
     for (s <- samples) model = lr.fit(model, s.featureVector, s.label)
   }
